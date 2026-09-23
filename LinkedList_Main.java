@@ -4,9 +4,7 @@ public class LinkedList_Main {
     public static void main(String[] args){
         //list or Collection -> Interface (so can't create the object )
 
-//        ArrayList -> concrete class
-//        Hum arraylist create krke uska obect ka reference kaise v rkh skte hai jaise
-//        kii list collection wagera ki class bn nhi skti toh v reference name bna skte hai...
+//        linkedlist -> concrete class
 
         LinkedList<Integer> list = new LinkedList<>();
 

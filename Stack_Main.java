@@ -1,16 +1,16 @@
 import java.util.*;
 
-public class Vector_Main {
+public class Stack_Main {
     public static void main(String[] args){
         //list or Collection -> Interface (so can't create the object )
 
-//        vector -> concrete class
-//
+//        Stack -> concrete class
 
-        Vector<Integer> list = new Vector<>();
+        Stack<Integer> list = new Stack<>();
 
-//        List<Integer> list = new Vector<>();
-//        Collection<Integer> collection = new Vector<>();
+
+//        List<Integer> list = new Stack<>();
+//        Collection<Integer> collection = new Stack<>();
 
         //add
         list.add(10);
@@ -25,7 +25,7 @@ public class Vector_Main {
         System.out.println(list);
 
 //        addAll
-        List<Integer> list2 = new Vector<>();
+        List<Integer> list2 = new Stack<>();
         list2.add(101);
         list2.add(200);
         list2.add(20);
@@ -59,7 +59,7 @@ public class Vector_Main {
         }
 
 //          get set method of list
-        List<Integer>  list3 = new Vector<>();
+        List<Integer>  list3 = new Stack<>();
         list3.add(11);
         list3.add(12);
         list3.add(13);
@@ -82,18 +82,18 @@ public class Vector_Main {
         list.add(21);
         System.out.println("Printing Entire list: " + list);
 
-// sort an Vector
+// sort a Stack
         Collections.sort(list);
         System.out.println("Printing Entire sorted list :" + list); // ascending order sort default
         Collections.sort(list,Collections.reverseOrder());
         System.out.println("Printing Entire descending order sorted list :" + list); // descending order sort
 
 //        clone
-        Vector<Integer> newlist = (Vector<Integer>)list.clone(); // mean type cast ho gya ki clone bn ke aa rha wo arraylist of int typ ka aa rha hai
+        Stack<Integer> newlist = (Stack<Integer>)list.clone(); // mean type cast ho gya ki clone bn ke aa rha wo arraylist of int typ ka aa rha hai
         System.out.println("Newlist of clone : " + newlist);
 
 //        Ensurecapacity()
-        Vector<Integer> marks = new Vector<>();
+        Stack<Integer> marks = new Stack<>();
         marks.ensureCapacity(100);
 
 //        empty
@@ -104,5 +104,32 @@ public class Vector_Main {
         System.out.println("newlist :" + newlist);
         System.out.println(newlist.indexOf(30));
 
+
+//        Specific Methods Of Stack
+
+        Stack<Integer> stk = new Stack<>();
+        System.out.println("Stack Operations");
+        stk.push(10);
+        System.out.println(stk);
+        stk.push(20);
+        stk.push(34);
+        System.out.println(stk);
+        stk.pop();
+        System.out.println(stk);
+
+        System.out.println(stk.peek());
+
+        System.out.println(stk.search(20));
+        System.out.println(stk.search(33));
+
+        System.out.println(stk.isEmpty());
+
+
+
+
+
+
+
     }
 }
+
