@@ -83,7 +83,7 @@ public class Vector_Main {
         list.add(21);
         System.out.println("Printing Entire list: " + list);
 
-// sort an arraylist
+// sort an Vector
         Collections.sort(list);
         System.out.println("Printing Entire sorted list :" + list); // ascending order sort default
         Collections.sort(list,Collections.reverseOrder());
