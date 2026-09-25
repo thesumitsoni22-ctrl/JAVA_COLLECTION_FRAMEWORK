@@ -1,3 +1,5 @@
+package STACK_COLLECTION_FRAMEWORK;
+
 import java.util.*;
 
 public class Stack_Main {

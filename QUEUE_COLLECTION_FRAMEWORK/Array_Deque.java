@@ -1,5 +1,6 @@
+package QUEUE_COLLECTION_FRAMEWORK;
+
 import java.util.Deque;
-import java.util.Queue;
 import java.util.ArrayDeque;
 
 public class Array_Deque {
